@@ -35,13 +35,15 @@ a {
   align-items: center;
   background-color: #0f2c29;
   width: 100%;
-  height: 180px;
-  overflow: hidden;
+  /* height: 180px; */
+  /* overflow: hidden; */
 }
 
 .logo {
   width: 70%;
+
   height: 70%;
+
   object-fit: cover;
   display: block;
 }
@@ -52,4 +54,30 @@ a {
   align-items: center;
   padding: 40px;
   background-color: #153e3a;
+}
+.btn-minus {
+  background-color: #1e7d6b;
+  border: none;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.btn-minus:hover {
+  background-color: #0f2c29;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.btn-plus {
+  background-color: #1e7d6b;
+  border: none;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.btn-plus:hover {
+  background-color: #0f2c29;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
