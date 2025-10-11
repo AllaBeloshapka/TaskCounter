@@ -5,6 +5,7 @@ const NUMBER = document.querySelector(".number");
 const BTN_MINUS = document.querySelector(".btn-minus");
 const BTN_PLUS = document.querySelector(".btn-plus");
 
+
 // Массив для хранения задач
 let tasksArray = [];
 
