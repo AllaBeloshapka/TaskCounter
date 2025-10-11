@@ -11,7 +11,10 @@ let tasksArray = [];
 
 // Функция обновления списка задач и счётчика
 function updateTasks() {
-  TASKS.removeChild(child); // очищаем список
+  
+while (TASKS.firstChild) {     // очищаем список
+  TASKS.removeChild(TASKS.firstChild);
+}
 
   tasksArray.forEach((task, index) => {
 

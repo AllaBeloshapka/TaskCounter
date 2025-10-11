@@ -30,27 +30,84 @@ a {
 }
 
 .header {
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0f2c29;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f2c29;
+>>>>>>> 69af79ab6b8991eaaf2f125527dbf20e8fb52c4b
   width: 100%;
-  height: 180px;
+  height: 150px;
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 
 .logo {
   width: 70%;
   height: 70%;
   object-fit: cover;
+=======
+.logo {
+  width: 60%;
+>>>>>>> 69af79ab6b8991eaaf2f125527dbf20e8fb52c4b
   display: block;
 }
 .main {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px;
   background-color: #153e3a;
+  font-size: 50px;
+  color: white;
+}
+
+/* поле для всех задач */
+.tasks {
+  width: 60%;
+  height: 300px;
+  background: #a7c2c0;
+  border-radius: 10px;
+  box-shadow: inset 0 5px 15px black;
+  padding: 40px;
+  font-size: 24px;
+  color: #000403;
+}
+
+/* поле ввода задачи */
+.input {
+  width: 60%;
+  height: 100px;
+  background: #a7c2c0;
+  border-radius: 10px;
+  box-shadow: inset 0 5px 15px black;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  outline: none;
+}
+
+/* кнопки */
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+#btn{
+  width: 80px;
+  height: 80px;
+  background: #3b5850;
+  font-size: 50px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px black;
 }
