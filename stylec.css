@@ -42,10 +42,14 @@ a {
 }
 
 .logo {
-  width: 100%;  /* ИЗМЕНЕНО: логотип занимает доступную ширину контейнера */
-  max-width: 720px; /* ДОБАВЛЕНО: ограничил максимальную ширину, чтобы не расползался */
-  height: auto; /* ИЗМЕНЕНО: сохраняем пропорции изображения */
-  object-fit: contain;  /* ИЗМЕНЕНО: вместо cover, чтобы не кадрировать логотип */
+  width: 70%;
+
+  height: 70%;
+
+  object-fit: cover;
+}
+.logo {
+  width: 60%;
   display: block;
   margin: 0 auto; /* ДОБАВЛЕНО: центрируем изображение */
 }
@@ -62,7 +66,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 20px;
   background-color: #153e3a;
   font-size: 50px;
   color: white;
@@ -78,12 +82,13 @@ a {
   padding: 40px;
   font-size: 24px;
   color: #000403;
+  overflow-y: auto;
 }
 
 /* поле ввода задачи */
 .input {
   width: 60%;
-  height: 100px;
+  height: 70px;
   background: #a7c2c0;
   border-radius: 10px;
   box-shadow: inset 0 5px 15px black;
@@ -107,5 +112,27 @@ a {
   font-size: 50px;
   color: white;
   border-radius: 10px;
-  box-shadow: 0 5px 15px black;
+  box-shadow:  0 5px 15px black;
 }
+.buttons {
+  display: flex;
+  justify-content: center; /* выравнивает кнопки по центру */
+  gap: 20px; /* расстояние между кнопками */
+  margin-top: 5px;
+  padding: 10px;
+}
+
+button {
+  width: 100px;         /* ← длина кнопки */
+  height: 20px;         /* ← высота кнопки */
+  font-size: 18px;      /* размер текста */
+  border-radius: 10px;  /* скруглённые углы (по желанию) */
+  background-color: #3e5b3f; /* цвет кнопки */
+  color: rgb(26, 24, 24);
+  border: none;
+  }
+
+button:hover {
+  background-color: #45a049; /* эффект при наведении */
+}
+
