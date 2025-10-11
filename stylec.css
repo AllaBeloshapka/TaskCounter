@@ -45,7 +45,9 @@ a {
 
 .logo {
   width: 70%;
+
   height: 70%;
+
   object-fit: cover;
 }
 .logo {
@@ -104,4 +106,30 @@ a {
   color: white;
   border-radius: 10px;
   box-shadow: 0 5px 15px black;
+}
+.btn-minus {
+  background-color: #1e7d6b;
+  border: none;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.btn-minus:hover {
+  background-color: #0f2c29;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.btn-plus {
+  background-color: #1e7d6b;
+  border: none;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.btn-plus:hover {
+  background-color: #0f2c29;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
