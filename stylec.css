@@ -49,7 +49,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 20px;
   background-color: #153e3a;
   font-size: 50px;
   color: white;
@@ -65,12 +65,13 @@ a {
   padding: 40px;
   font-size: 24px;
   color: #000403;
+  overflow-y: auto;
 }
 
 /* поле ввода задачи */
 .input {
   width: 60%;
-  height: 100px;
+  height: 70px;
   background: #a7c2c0;
   border-radius: 10px;
   box-shadow: inset 0 5px 15px black;
@@ -94,5 +95,5 @@ a {
   font-size: 50px;
   color: white;
   border-radius: 10px;
-  box-shadow: 0 5px 15px black;
+  box-shadow:  0 5px 15px black;
 }
