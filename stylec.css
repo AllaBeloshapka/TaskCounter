@@ -42,13 +42,6 @@ a {
 }
 
 .logo {
-  width: 70%;
-
-  height: 70%;
-
-  object-fit: cover;
-}
-.logo {
   width: 60%;
   display: block;
   margin: 0 auto; /* ДОБАВЛЕНО: центрируем изображение */
@@ -105,15 +98,6 @@ a {
   gap: 30px;
 }
 
-#btn {
-  width: 80px;
-  height: 80px;
-  background: #3b5850;
-  font-size: 50px;
-  color: white;
-  border-radius: 10px;
-  box-shadow:  0 5px 15px black;
-}
 .buttons {
   display: flex;
   justify-content: center; /* выравнивает кнопки по центру */
@@ -122,7 +106,7 @@ a {
   padding: 10px;
 }
 
-button {
+#btn {
   width: 100px;         /* ← длина кнопки */
   height: 20px;         /* ← высота кнопки */
   font-size: 18px;      /* размер текста */
@@ -132,7 +116,7 @@ button {
   border: none;
   }
 
-button:hover {
+#btn:hover {
   background-color: #45a049; /* эффект при наведении */
 }
 
