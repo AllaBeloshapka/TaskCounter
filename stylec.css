@@ -108,3 +108,25 @@ a {
   border-radius: 10px;
   box-shadow:  0 5px 15px black;
 }
+.buttons {
+  display: flex;
+  justify-content: center; /* выравнивает кнопки по центру */
+  gap: 20px; /* расстояние между кнопками */
+  margin-top: 5px;
+  padding: 10px;
+}
+
+button {
+  width: 100px;         /* ← длина кнопки */
+  height: 20px;         /* ← высота кнопки */
+  font-size: 18px;      /* размер текста */
+  border-radius: 10px;  /* скруглённые углы (по желанию) */
+  background-color: #3e5b3f; /* цвет кнопки */
+  color: rgb(26, 24, 24);
+  border: none;
+  }
+
+button:hover {
+  background-color: #45a049; /* эффект при наведении */
+}
+
