@@ -91,29 +91,25 @@ a {
   outline: none;
 }
 
-/* кнопки */
-.buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
 
 .buttons {
   display: flex;
+  flex-direction: row;
   justify-content: center; /* выравнивает кнопки по центру */
-  gap: 20px; /* расстояние между кнопками */
+  gap: 30px; /* расстояние между кнопками */
   margin-top: 5px;
   padding: 10px;
 }
 
 #btn {
-  width: 100px;         /* ← длина кнопки */
-  height: 20px;         /* ← высота кнопки */
-  font-size: 18px;      /* размер текста */
+  width: 150px;         /* ← длина кнопки */
+  height: 50px;         /* ← высота кнопки */
+  font-size: 50px;      /* размер текста */
   border-radius: 10px;  /* скруглённые углы (по желанию) */
   background-color: #3e5b3f; /* цвет кнопки */
-  color: rgb(26, 24, 24);
+  color: rgb(250, 249, 249);
   border: none;
+  box-shadow: inset 0 5px 10px black;
   }
 
 #btn:hover {
