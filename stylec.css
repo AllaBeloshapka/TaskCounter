@@ -30,32 +30,26 @@ a {
 }
 
 .header {
-<<<<<<< HEAD
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0f2c29;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #0f2c29;
->>>>>>> 69af79ab6b8991eaaf2f125527dbf20e8fb52c4b
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f2c29;
   width: 100%;
   height: 150px;
   overflow: hidden;
 }
 
-<<<<<<< HEAD
-
 .logo {
   width: 70%;
   height: 70%;
   object-fit: cover;
-=======
+}
 .logo {
   width: 60%;
->>>>>>> 69af79ab6b8991eaaf2f125527dbf20e8fb52c4b
   display: block;
 }
 .main {
@@ -96,13 +90,13 @@ a {
 }
 
 /* кнопки */
-.buttons{
+.buttons {
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
 
-#btn{
+#btn {
   width: 80px;
   height: 80px;
   background: #3b5850;
