@@ -35,13 +35,18 @@ a {
   align-items: center;
   background-color: #153e3a;
   width: 100%;
-  height: 150px;
-  overflow: hidden;
 }
 
 .logo {
   width: 40%;
 }
+
+/* НЕМНОГО АДАПТИВА ДЛЯ МАЛЫХ ЭКРАНОВ */
+@media (max-width: 768px) {
+  .header { padding: 12px; }     /* ДОБАВЛЕНО */
+  .logo { max-width: 90vw; }     /* ДОБАВЛЕНО: логотип не шире области просмотра */
+}
+
 .main {
   flex: 1;
   display: flex;
@@ -102,11 +107,14 @@ a {
   outline: none;
 }
 
-/* кнопки */
+
 .buttons {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  justify-content: center; /* выравнивает кнопки по центру */
+  gap: 30px; /* расстояние между кнопками */
+  margin-top: 5px;
+  padding: 10px;
 }
 
 /* кнопки */
@@ -196,3 +204,55 @@ a {
   top: 15%;
   left: 25%;
 }
+
+.footer {
+  background-color: #0f2c29;
+  color: #99b8b5;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 4px 0;
+  color: #99b8b5;
+}
+
+.social-icons a {
+  font-size: 20px;
+}
+
+.footer-bottom {
+  background-color: #153e3a;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 25px;
+}
+#btn {
+  width: 150px;         /* ← длина кнопки */
+  height: 50px;         /* ← высота кнопки */
+  font-size: 50px;      /* размер текста */
+  border-radius: 10px;  /* скруглённые углы (по желанию) */
+  background-color: #34534a; /* цвет кнопки */
+  color: rgb(250, 249, 249);
+  border: none;
+  box-shadow: inset 5px 0 10px black;
+  }
+
+#btn:hover {
+  background-color: #286659; /* эффект при наведении */
+}
+

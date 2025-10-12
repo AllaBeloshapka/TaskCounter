@@ -56,6 +56,7 @@ BTN_PLUS.addEventListener("click", () => {
     INPUT.value = ""; // очищаем input
     updateTasks();
   }
+  INPUT.focus();   // возвращаем фокус
 });
 
 // Кнопка минус
@@ -78,7 +79,7 @@ BTN_MINUS.addEventListener("click", () => {
     // опционально можно показать подсказку пользователю
     // например: showToast('Задача не найдена, поле очищено');
   }
-  
+  INPUT.focus(); // возвращаем фокус
 });
 
 // Инициализация при загрузке
