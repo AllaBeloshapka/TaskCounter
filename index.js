@@ -5,12 +5,16 @@ const NUMBER = document.querySelector(".number");
 const BTN_MINUS = document.querySelector(".btn-minus");
 const BTN_PLUS = document.querySelector(".btn-plus");
 
+
 // Массив для хранения задач
 let tasksArray = [];
 
 // Функция обновления списка задач и счётчика
 function updateTasks() {
-  TASKS.removeChild(child); // очищаем список
+  
+while (TASKS.firstChild) {     // очищаем список
+  TASKS.removeChild(TASKS.firstChild);
+}
 
   tasksArray.forEach((task, index) => {
 
@@ -52,6 +56,7 @@ BTN_PLUS.addEventListener("click", () => {
     INPUT.value = ""; // очищаем input
     updateTasks();
   }
+  INPUT.focus();   // возвращаем фокус
 });
 
 // Кнопка минус
@@ -70,6 +75,7 @@ BTN_MINUS.addEventListener("click", () => {
       updateTasks();
     }
   }
+  INPUT.focus(); // возвращаем фокус
 });
 
 // Инициализация при загрузке
