@@ -33,14 +33,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1a3a34;
+  background-color: #153e3a;
   width: 100%;
 }
 
 .logo {
   width: 40%;
-  display: block;
-  margin: 0 auto; /* ДОБАВЛЕНО: центрируем изображение */
 }
 
 /* НЕМНОГО АДАПТИВА ДЛЯ МАЛЫХ ЭКРАНОВ */
@@ -74,9 +72,31 @@ a {
   overflow-y: auto;
 }
 
+.info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding-left: 3%;
+}
+
+/* значёк на кнопке с инсрукцией */
+.instructions {
+  width: 30px;
+  height: 30px;
+}
+
+/* кнопка для получения инструкции */
+#open-btn{
+  width: 40px;
+  height: 40px;
+  background: #153e3a;
+  
+}
+
 /* поле ввода задачи */
 .input {
-  width: 60%;
+  width: 55%;
   height: 70px;
   background: #a7c2c0;
   border-radius: 10px;
@@ -95,6 +115,94 @@ a {
   gap: 30px; /* расстояние между кнопками */
   margin-top: 5px;
   padding: 10px;
+}
+
+/* кнопки */
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 150px;
+  height: 50px;
+  background: #3b5850;
+  font-size: 50px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 0 15px black;
+}
+
+/* затемняющий фон на весь экран */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный фон */
+  display: none; /* изначально скрыт */
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* рамка по центру */
+.modal-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  background-color: transparent;
+  backdrop-filter: blur(1px); /* красивое размытие позади */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+/* крестик в правом верхнем углу */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.info-btn-plus{
+  position: relative;
+  width: 300px;
+  top: 30%;
+  left: 63%;
+}
+
+.info-btn-minus{
+  position: relative;
+  width: 300px;
+  top: 40%;
+  left: 20%;
+}
+
+.input_field{
+  position: relative;
+  top: 30%;
+  left: 3%;
+}
+
+.task_field{
+  position: relative;
+  top: 15%;
+  left: 25%;
 }
 
 .footer {

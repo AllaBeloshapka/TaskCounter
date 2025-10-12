@@ -8,20 +8,51 @@
     <title>TaskCounter</title>
   </head>
   <body>
+    <div class="overlay">
+      <div class="modal-box">
+        <button class="close-btn">✕</button>
+        <h2>Инструкция по использованию<br />TaskCounter</h2>
+        <br />
+        <p>
+          Простое веб-приложение для добавления, удаления и подсчёта ежедневных
+          задач.<br />С его помощью можно отслеживать, просматривать и удалять
+          задачи в течение дня,<br />а также видеть текущее количество активных
+          задач.
+        </p>
+        <!-- <div class="box-info"> -->
+          <div class="task_field">
+            <h2>Список задач.</h2><br />Напротив каждой задачи будет маленький
+            квадратик.<br />Отметьте галочкой задачу, которую хотите удалить.<br />Она
+            появится в поле ввода.<br />Нажмите “минус” — задача исчезнет из
+            списка, а счётчик уменьшится.
+          </div>
+          <div class="input_field">Введите текст задачи в поле ввода.</div>
+          <div class="info-btn-minus">
+            Если вы случайно ввели что-то не то,
+            нажмите «минус» и текст будет стёрт.
+          </div>
+          <div class="info-btn-plus">
+            Нажмите кнопку «плюс».<br />Задача будет добавлена в верхний
+            список,<br />счётчик увеличивается на 1.
+          </div>
+        <!-- </div> -->
+      </div>
+    </div>
+
     <div id="root">
       <header class="header">
-        <img
-          src="./assets/photo_2025-10-11_15-54-14.jpg"
-          alt="logo"
-          class="logo"
-        />
+        <img src="./assets/logo.jpg" alt="logo" class="logo" />
       </header>
 
       <main class="main">
-        <div class="tasks"></div>
+        <div class="info">
+          <div class="tasks"></div>
+          <button id="open-btn">
+            <img class="instructions" src="./assets/info.png" />
+          </button>
+        </div>
         <input class="input" placeholder="Введите Вашу задачу" type="text" />
         <h2 class="number"></h2>
-        
         <div class="buttons">
           <button type="button" class="btn-minus" id="btn">-</button>
           <button type="button" class="btn-plus" id="btn">+</button>

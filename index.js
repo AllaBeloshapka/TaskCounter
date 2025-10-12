@@ -66,17 +66,42 @@ BTN_MINUS.addEventListener("click", () => {
   if (taskText === "") {
     // Просто очищаем поле
     INPUT.value = "";
-  } else {
-    // Если текст есть — удаляем его из списка задач
+    return;
+  } 
     const index = tasksArray.indexOf(taskText);
     if (index > -1) {
       tasksArray.splice(index, 1);
       INPUT.value = "";
       updateTasks();
-    }
+    }else {
+    // введённый текст ещё не в списке — просто очищаем поле
+    INPUT.value = "";
+    // опционально можно показать подсказку пользователю
+    // например: showToast('Задача не найдена, поле очищено');
   }
   INPUT.focus(); // возвращаем фокус
 });
 
 // Инициализация при загрузке
 updateTasks();
+
+// инструкция по использованию
+
+const overlay = document.querySelector(".overlay");
+const openBtn = document.querySelector("#open-btn");
+const closeBtn = document.querySelector(".close-btn");
+
+openBtn.addEventListener('click', () => {
+  overlay.style.display = 'flex';
+});
+
+closeBtn.addEventListener('click', () => {
+  overlay.style.display = 'none';
+});
+
+// чтобы закрывать рамку по клику вне её
+overlay.addEventListener('click', (event) => {
+  if (event.target === overlay) {
+    overlay.style.display = 'none';
+  }
+});
