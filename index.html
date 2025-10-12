@@ -10,21 +10,18 @@
   <body>
     <div id="root">
       <header class="header">
-        <img
-          src="./assets/photo_2025-10-10_13-27-05.jpg"
-          alt="logo"
-          class="logo"
-        />
+        <img src="./assets/logo.jpg" alt="logo" class="logo" />
       </header>
 
       <main class="main">
-        <div class="tasks"></div>
+        <div class="info">
+          <div class="tasks"></div>
+          <img class="instructions" src="./assets/info.png" />
+        </div>
         <input class="input" placeholder="Введите Вашу задачу" type="text" />
         <h2 class="number"></h2>
-        <div class="buttons">
-          <button type="submit" class="btn-minus">-</button>
 
-          <button type="submit" class="btn-plus">+</button>
+        <div class="buttons">
           <button type="button" class="btn-minus" id="btn">-</button>
           <button type="button" class="btn-plus" id="btn">+</button>
         </div>
