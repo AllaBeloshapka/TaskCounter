@@ -29,6 +29,7 @@ a {
   flex-direction: column;
 }
 
+/* шапка */
 .header {
   display: flex;
   justify-content: center;
@@ -37,6 +38,7 @@ a {
   width: 100%;
 }
 
+/* логотип */
 .logo {
   width: 40%;
 }
@@ -47,6 +49,7 @@ a {
   .logo { max-width: 90vw; }     /* ДОБАВЛЕНО: логотип не шире области просмотра */
 }
 
+/* основное поле  */
 .main {
   flex: 1;
   display: flex;
@@ -72,6 +75,7 @@ a {
   overflow-y: auto;
 }
 
+/* блок с инструкцией модального окна */
 .info {
   display: flex;
   flex-direction: row;
@@ -91,7 +95,13 @@ a {
   width: 40px;
   height: 40px;
   background: #153e3a;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#open-btn:hover{
+  background-color: #286659; /* эффект при наведении */
 }
 
 /* поле ввода задачи */
@@ -107,7 +117,7 @@ a {
   outline: none;
 }
 
-
+/* блок кнопок плюс и минус */
 .buttons {
   display: flex;
   flex-direction: row;
@@ -119,17 +129,18 @@ a {
 
 /* кнопки */
 #btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: none;
-  width: 150px;
-  height: 50px;
-  background: #3b5850;
-  font-size: 50px;
-  color: white;
-  border-radius: 10px;
-  box-shadow: 5px 0 15px black;
+  width: 150px;         /* ← длина кнопки */
+  height: 50px;         /* ← высота кнопки */
+  font-size: 50px;      /* размер текста */
+  border-radius: 10px;  /* скруглённые углы (по желанию) */
+  background-color: #34534a; /* цвет кнопки */
+  color: rgb(250, 249, 249);
+  border: none;
+  box-shadow: inset 5px 0 10px black;
+  }
+
+#btn:hover {
+  background-color: #286659; /* эффект при наведении */
 }
 
 /* затемняющий фон на весь экран */
@@ -146,7 +157,7 @@ a {
   z-index: 999;
 }
 
-/* рамка по центру */
+/* рамка модального окна с инструкцией */
 .modal-box {
   position: relative;
   display: flex;
@@ -163,7 +174,7 @@ a {
   color: white;
 }
 
-/* крестик в правом верхнем углу */
+/* крестик в правом верхнем углу модального окна */
 .close-btn {
   position: absolute;
   top: 10px;
@@ -179,32 +190,37 @@ a {
   color: red;
 }
 
+/* инструкция к кнопке "плюс" */
 .info-btn-plus{
   position: relative;
   width: 300px;
-  top: 30%;
+  top: 28%;
   left: 63%;
 }
 
+/* инструкция к кнопке "минус" */
 .info-btn-minus{
   position: relative;
   width: 300px;
-  top: 40%;
-  left: 20%;
+  top: 38%;
+  left: 15%;
 }
 
+/* инструкция к полю для ввода */
 .input_field{
   position: relative;
-  top: 30%;
-  left: 3%;
+  top: 20%;
+  left: 1%;
 }
 
+/* инструкция к списку задач */
 .task_field{
   position: relative;
-  top: 15%;
+  top: 10%;
   left: 25%;
 }
 
+/* подвал */
 .footer {
   background-color: #0f2c29;
   color: #99b8b5;
@@ -241,18 +257,5 @@ a {
   padding: 10px 0;
   margin-top: 25px;
 }
-#btn {
-  width: 150px;         /* ← длина кнопки */
-  height: 50px;         /* ← высота кнопки */
-  font-size: 50px;      /* размер текста */
-  border-radius: 10px;  /* скруглённые углы (по желанию) */
-  background-color: #34534a; /* цвет кнопки */
-  color: rgb(250, 249, 249);
-  border: none;
-  box-shadow: inset 5px 0 10px black;
-  }
 
-#btn:hover {
-  background-color: #286659; /* эффект при наведении */
-}
 
