@@ -65,15 +65,20 @@ BTN_MINUS.addEventListener("click", () => {
   if (taskText === "") {
     // Просто очищаем поле
     INPUT.value = "";
-  } else {
-    // Если текст есть — удаляем его из списка задач
+    return;
+  } 
     const index = tasksArray.indexOf(taskText);
     if (index > -1) {
       tasksArray.splice(index, 1);
       INPUT.value = "";
       updateTasks();
-    }
+    }else {
+    // введённый текст ещё не в списке — просто очищаем поле
+    INPUT.value = "";
+    // опционально можно показать подсказку пользователю
+    // например: showToast('Задача не найдена, поле очищено');
   }
+  
 });
 
 // Инициализация при загрузке
