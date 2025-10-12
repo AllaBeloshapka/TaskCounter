@@ -78,3 +78,24 @@ BTN_MINUS.addEventListener("click", () => {
 
 // Инициализация при загрузке
 updateTasks();
+
+// инструкция по использованию
+
+const overlay = document.querySelector(".overlay");
+const openBtn = document.querySelector("#open-btn");
+const closeBtn = document.querySelector(".close-btn");
+
+openBtn.addEventListener('click', () => {
+  overlay.style.display = 'flex';
+});
+
+closeBtn.addEventListener('click', () => {
+  overlay.style.display = 'none';
+});
+
+// чтобы закрывать рамку по клику вне её
+overlay.addEventListener('click', (event) => {
+  if (event.target === overlay) {
+    overlay.style.display = 'none';
+  }
+});
