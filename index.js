@@ -6,36 +6,36 @@ const BTN_MINUS = document.querySelector(".btn-minus");
 const BTN_PLUS = document.querySelector(".btn-plus");
 
 
-// Массив для хранения задач
+// Array for storing tasks
 let tasksArray = [];
 
-// Функция обновления списка задач и счётчика
+// Task list and counter update function
 function updateTasks() {
   
-while (TASKS.firstChild) {     // очищаем список
+while (TASKS.firstChild) {     // clear the list
   TASKS.removeChild(TASKS.firstChild);
 }
 
   tasksArray.forEach((task, index) => {
 
-    //создаём задачи
+    //create tasks
     const taskItem = document.createElement("div");
     taskItem.classList.add("task-item");
 
-    // Чекбокс для выбора задачи
+    //Checkbox for selecting a task
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
 
     checkbox.addEventListener("change", () => {
       if (checkbox.checked) {
-        // Если галочка поставлена — текст задачи в поле input
+        // If the checkbox is checked, the task text is in the input field
         INPUT.value = task;
       } else {
         INPUT.value = "";
       }
     });
 
-    // Текст задачи
+    // Text of the problem
     const taskText = document.createElement("span");
     taskText.textContent = task;
 
@@ -44,27 +44,27 @@ while (TASKS.firstChild) {     // очищаем список
     TASKS.appendChild(taskItem);
   });
 
-  // Обновляем счётчик
+  // Updating the counter
   NUMBER.textContent = tasksArray.length;
 }
 
-// Кнопка плюс
+// Plus button
 BTN_PLUS.addEventListener("click", () => {
   const task = INPUT.value.trim();
   if (task !== "") {
-    tasksArray.push(task); // добавляем в список
-    INPUT.value = ""; // очищаем input
+    tasksArray.push(task); // add to the list
+    INPUT.value = ""; // clear the input
     updateTasks();
   }
-  INPUT.focus();   // возвращаем фокус
+  INPUT.focus();   // return focus
 });
 
-// Кнопка минус
+// Minus button
 BTN_MINUS.addEventListener("click", () => {
   const taskText = INPUT.value.trim();
 
   if (taskText === "") {
-    // Просто очищаем поле
+    // We just clear the field
     INPUT.value = "";
     return;
   } 
@@ -74,18 +74,18 @@ BTN_MINUS.addEventListener("click", () => {
       INPUT.value = "";
       updateTasks();
     }else {
-    // введённый текст ещё не в списке — просто очищаем поле
+    // The entered text is not yet in the list - just clear the field
     INPUT.value = "";
-    // опционально можно показать подсказку пользователю
-    // например: showToast('Задача не найдена, поле очищено');
+    // Optionally, you can show a hint to the user
+// For example: showToast('Task not found, field cleared');
   }
-  INPUT.focus(); // возвращаем фокус
+  INPUT.focus(); // return focus
 });
 
-// Инициализация при загрузке
+// Initialization at boot
 updateTasks();
 
-// инструкция по использованию
+// instructions for use
 
 const overlay = document.querySelector(".overlay");
 const openBtn = document.querySelector("#open-btn");
@@ -99,7 +99,7 @@ closeBtn.addEventListener('click', () => {
   overlay.style.display = 'none';
 });
 
-// чтобы закрывать рамку по клику вне её
+// to close the frame by clicking outside it
 overlay.addEventListener('click', (event) => {
   if (event.target === overlay) {
     overlay.style.display = 'none';
