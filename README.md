@@ -1,74 +1,69 @@
 # TaskCounter
 A simple web application for adding, removing, and counting daily tasks. Users can manage their to-do list, mark completed tasks, and always see the current number of active tasks.
 
- Приложение для ежедневных задач
+Daily Tasks App
 
-Это простое и удобное веб-приложение, созданное командой для тренировки работы с GitHub и командной разработки.
-С его помощью можно добавлять, просматривать и удалять задачи на день, а также видеть текущее количество активных задач.
+This is a simple and user-friendly web app created by the team for GitHub practice and team development. It allows you to add, view, and delete daily tasks, as well as see the current number of active tasks.
 
- Основная идея
+Key Concept
 
-В центре экрана находится список всех текущих задач.
-Ниже расположен поле ввода, куда пользователь набирает текст новой задачи.
-Под полем ввода отображается счётчик задач — он показывает, сколько задач в списке прямо сейчас.
-Ещё ниже — две кнопки: плюс и минус.
+In the center of the screen is a list of all current tasks. Below is an input field where the user types the text for a new task. Below the input field is a task counter, which shows how many tasks are currently in the list. Below that are two buttons: plus and minus.
 
- Основной функционал
+Key Functionality
 
-Добавление задачи
+Adding a Task
 
-Введите текст задачи в поле ввода.
+Enter the task text in the input field.
 
-Нажмите кнопку “плюс”.
+Click the plus button.
 
-Задача появится в верхнем списке, а счётчик увеличится на 1.
+The task will appear in the top list, and the counter will increase by 1.
 
-Удаление текста из поля
+Deleting Text from a Field
 
-Если вы случайно ввели что-то не то, нажмите “минус”.
+If you accidentally entered something incorrectly, click the minus sign.
 
-Поле ввода очистится, а задача не будет добавлена.
+The input field will be cleared, and the task will not be added.
 
-Удаление задачи из списка
+Deleting a Task from the List
 
-Напротив каждой задачи есть маленький квадратик (чекбокс).
+Next to each task, there is a small checkbox.
 
-Отметьте задачу, которую хотите удалить.
+Check the task you want to delete.
 
-Она появится в поле ввода.
+It will appear in the input field.
 
-Нажмите “минус” — задача исчезнет из списка, а счётчик уменьшится.
+Click the "minus" sign — the task will disappear from the list, and the counter will decrease.
 
-Автоматическое обновление счётчика
+Automatic counter update
 
-Счётчик увеличивается при добавлении задачи и уменьшается при удалении.
+The counter increases when a task is added and decreases when a task is deleted.
 
-Он всегда показывает актуальное количество задач в списке.
+It always displays the current number of tasks in the list.
 
- Структура интерфейса
+Interface structure
 
-Верхняя часть (2/3 экрана) — блок списка задач.
+The top section (2/3 of the screen) is the task list block.
 
-Средняя часть — поле ввода текста задачи.
+The middle section is the task text input field.
 
-Ниже — блок с цифрой, показывающей количество задач.
+Below is a block with a number indicating the number of tasks.
 
-Нижняя часть — две кнопки: “+” (добавить) и “−” (удалить).
+The bottom section contains two buttons: "+" (add) and "-" (delete).
 
- Техническая реализация
+Technical implementation
 
-Проект выполнен на чистом HTML / CSS / JavaScript.
+The project is implemented using pure HTML / CSS / JavaScript.
 
-Все данные хранятся в памяти браузера (без сервера).
+All data is stored in the browser's memory (no server).
 
-Логика счётчика и списка написана на JavaScript.
+The counter and list logic is written in JavaScript.
 
-Верстка адаптирована под базовые размеры экранов.
+The layout is adapted to basic screen sizes.
 
- Задачи команды
+Team tasks
 
-Каждый участник команды отвечает за свою часть проекта — от разметки и стилей до логики добавления, удаления и счётчика. Все изменения вносятся через отдельные ветки и pull request'ы в GitHub, с последующим код-ревью тимлида.
-
+Each team member is responsible for their own part of the project — from the markup and styles to the logic for adding, deleting, and the counter. All changes are made through separate branches and pull requests in GitHub, followed by code review by the team lead.
 
 
 
